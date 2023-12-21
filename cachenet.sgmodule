@@ -1,0 +1,14 @@
+#!name= Cache GekichumaiNET
+#!desc= MITM over HTTP/2 && IOS >= 15
+
+# Credit
+# @BiliUniverse, SocialSisterYi/bilibili-API-collect
+# @Maasea, /Maasea/sgmodule
+
+[Script]
+cachenet.maimaidx = type=http-response,pattern=^https:\/\/maimaidx.net\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/master/cachenet.js
+cachenet.chunithm = type=http-response,pattern=^https:\/\/new.chunithm-net.com\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/master/cachenet.js
+cachenet.ongeki = type=http-response,pattern=^https:\/\/ongeki-net.com\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/master/cachenet.js
+
+[MITM]
+hostname = %APPEND% maimaidx.net, new.chunithm-net.com, ongeki-net.com
