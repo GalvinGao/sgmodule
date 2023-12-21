@@ -2,4 +2,4 @@
 #!desc= 让我来教华立怎么写 CSS
 
 [Script]
-betterchumaicn.login = type=http-request,pattern=wq\.sys-all\.cn\/.*\.html.*,requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/master/betterchumaicn.js
+betterchumaicn.login = type=http-request,pattern=wq\.sys-all\.cn\/.*\.html.*,requires-body=0,max-size=-1,debug=true,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/master/betterchumaicn.js
