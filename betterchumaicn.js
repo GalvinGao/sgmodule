@@ -1,9 +1,9 @@
 function extractPageData() {
   // extract `imageId` from IMAGE_ID.html within the URL
-  const imageId = $request.url.match(/\/(\d+)\.html/)[1];
+  const imageId = $request.url.match(/\/(\w+)\.html/)[1];
 
   // extract `expiresAt` from the `?t=` query string
-  const expiresAt = $request.url.match(/t=(\d+)/)[1];
+  const expiresAt = parseInt($request.url.match(/l=(\d+)/)[1]) * 1000;
 
   return { imageId, expiresAt };
 }
@@ -48,5 +48,11 @@ const replacedPageContent = contentHTML.replace(
 );
 
 $done({
-  body: replacedPageContent,
+  response: {
+    status: 200,
+    headers: {
+      "Content-Type": "text/html; charset=utf-8",
+    },
+    body: replacedPageContent,
+  },
 });
