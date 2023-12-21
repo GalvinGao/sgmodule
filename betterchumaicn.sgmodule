@@ -1,0 +1,5 @@
+#!name= Better 华立二维码登录界面
+#!desc= 让我来教华立怎么写 CSS
+
+[Script]
+betterchumaicn.maimaidx = type=http-response,pattern=wq\.sys-all\.cn\/.*\.html.*,requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/master/betterchumaicn.js
