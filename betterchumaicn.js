@@ -1,9 +1,10 @@
 function extractPageData() {
+  const url = $request.url;
   // extract `imageId` from IMAGE_ID.html within the URL
-  const imageId = window.location.pathname.match(/\/(\d+)\.html/)[1];
+  const imageId = url.pathname.match(/\/(\d+)\.html/)[1];
 
   // extract `expiresAt` from the `?t=` query string
-  const expiresAt = window.location.searchParams.get("t");
+  const expiresAt = url.searchParams.get("t");
 
   return { imageId, expiresAt };
 }
