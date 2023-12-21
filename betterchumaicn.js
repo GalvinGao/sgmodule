@@ -1,5 +1,6 @@
 function extractPageData() {
   const url = new URL($request.url);
+  console.log(url, url.pathname);
   // extract `imageId` from IMAGE_ID.html within the URL
   const imageId = url.pathname.match(/\/(\d+)\.html/)[1];
 
