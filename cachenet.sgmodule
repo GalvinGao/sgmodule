@@ -1,9 +1,5 @@
 #!name= Cache GekichumaiNET
-#!desc= MITM over HTTP/2 && IOS >= 15
-
-# Credit
-# @BiliUniverse, SocialSisterYi/bilibili-API-collect
-# @Maasea, /Maasea/sgmodule
+#!desc= 会不会好好下发 Cache-Control 啊？不会的话我来帮你
 
 [Script]
 cachenet.maimaidx = type=http-response,pattern=^https:\/\/maimaidx.net\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/master/cachenet.js
