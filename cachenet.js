@@ -2,6 +2,7 @@ const responseHeaders = $response.headers;
 
 // strip off `expires` header
 delete responseHeaders["expires"];
+delete responseHeaders["Expires"];
 
 $done({
   headers: {
