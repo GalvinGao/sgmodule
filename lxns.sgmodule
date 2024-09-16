@@ -2,7 +2,7 @@
 #!desc= 落雪咖啡屋 maimai DX 查分器玩家数据与成绩 HTTP 代理
 
 [Proxy]
-lxns = http, proxy.maimai.lxns.net, 8080
+lxns = http, proxy.maimai.lxns.net, 8080, ,
 
 [Rule]
 DOMAIN-SUFFIX,wahlap.com,lxns
