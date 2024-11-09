@@ -2,9 +2,9 @@
 #!desc= 会不会好好下发 Cache-Control 啊？不会的话我来帮你
 
 [Script]
-cachenet.maimaidx = type=http-response,pattern=^https:\/\/maimaidx.jp\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/master/cachenet.js
-cachenet.chunithm = type=http-response,pattern=^https:\/\/new.chunithm-net.com\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/master/cachenet.js
-cachenet.ongeki = type=http-response,pattern=^https:\/\/ongeki-net.com\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/master/cachenet.js
+cachenet.maimaidx = type=http-response,pattern=^https:\/\/maimaidx.jp\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/main/cachenet.js
+cachenet.chunithm = type=http-response,pattern=^https:\/\/new.chunithm-net.com\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/main/cachenet.js
+cachenet.ongeki = type=http-response,pattern=^https:\/\/ongeki-net.com\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/main/cachenet.js
 
 [MITM]
 hostname = %APPEND% maimaidx.jp, new.chunithm-net.com, ongeki-net.com

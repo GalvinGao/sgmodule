@@ -2,8 +2,8 @@
 #!desc= 会不会好好下发 Cache-Control 啊？不会的话我来帮你
 
 [Script]
-cachenetcn.maimaidx = type=http-response,pattern=^https:\/\/maimai.wahlap.com\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/master/cachenet.js
-cachenetcn.chunithm = type=http-response,pattern=^https:\/\/chunithm.wahlap.com\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/master/cachenet.js
+cachenetcn.maimaidx = type=http-response,pattern=^https:\/\/maimai.wahlap.com\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/main/cachenet.js
+cachenetcn.chunithm = type=http-response,pattern=^https:\/\/chunithm.wahlap.com\/.*\.(jpg|png),requires-body=0,max-size=-1,binary-body-mode=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/main/cachenet.js
 
 [MITM]
 hostname = %APPEND% maimai.wahlap.com, chunithm.wahlap.com
