@@ -2,7 +2,7 @@
 #!desc=Captures and reflects Rotaeno CloudSave data
 
 [Script]
-CloudSave-Capture = type=http-response,pattern=^https:\/\/leanapi\.rotaeno\.com\/1\.1\/classes\/CloudSave.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/main/rotaenolocalreflect-capture.js
+CloudSave-Capture = type=http-response,pattern=^https:\/\/leanapi\.rotaeno\.com\/1\.1\/classes\/CloudSave,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/main/rotaenolocalreflect-capture.js
 CloudSave-Reflect = type=http-request,pattern=^https:\/\/localreflect\.rotaeno\.imgg\.dev\/v0\/CloudSave,requires-body=0,script-path=https://raw.githubusercontent.com/GalvinGao/sgmodule/main/rotaenolocalreflect-reflect.js
 
 [MITM]
